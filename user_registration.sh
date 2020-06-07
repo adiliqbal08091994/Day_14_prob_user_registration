@@ -35,3 +35,14 @@ do
                 echo "enter correct email"
         fi
 done
+while [[ true ]]
+do
+        read -p "enter your phone number" phone
+        if [[ $phone =~ $phone_pat ]]
+        then
+                #echo "valid"
+                break
+        else 
+                echo "enter correct phone number"
+        fi
+done
