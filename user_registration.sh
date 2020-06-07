@@ -13,3 +13,14 @@ do
                 echo "enter correct first name"
         fi
 done
+while [[ true ]]
+do
+        read -p "enter your last name" l_name
+        if [[ $l_name =~ $name_pat ]]
+        then
+                #echo "valid"
+                break
+        else 
+                echo "enter correct last name"
+        fi
+done
