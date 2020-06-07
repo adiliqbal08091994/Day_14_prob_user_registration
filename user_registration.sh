@@ -46,3 +46,14 @@ do
                 echo "enter correct phone number"
         fi
 done
+while [[ true ]]
+do
+        read -p "Enter password " pass
+        if [[ ${#pass} -gt 8 && $pass =~ [A-Z] && $pass =~ [a-z] && $pass =~ [0-9] && $pass =~ [,\@\.\!\#\$\%\^\&\*\-] ]]
+        then
+                #echo "valid"
+                break
+        else
+                echo "enter password more than 8 digit use atleast 1 upper case and lower case and a special character"
+        fi
+done
