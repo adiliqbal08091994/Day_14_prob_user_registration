@@ -24,3 +24,14 @@ do
                 echo "enter correct last name"
         fi
 done
+while [[ true ]]
+do
+        read -p "enter your email" email
+        if [[ $email =~ $email_pat ]]
+        then
+                #echo "valid"
+                break
+        else 
+                echo "enter correct email"
+        fi
+done
