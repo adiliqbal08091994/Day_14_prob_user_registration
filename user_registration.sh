@@ -57,3 +57,4 @@ do
                 echo "enter password more than 8 digit use atleast 1 upper case and lower case and a special character"
         fi
 done
+echo -e " $f_name  $l_name \n $email  $phone \n $pass"
